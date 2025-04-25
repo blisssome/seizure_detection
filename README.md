@@ -10,6 +10,7 @@ A Python-based project aimed at detecting seizures using machine learning techni
 - [Usage](#usage)
 - [Model Performance](#model-performance)
 - [Project Structure](#project-structure)
+- [References](#references)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -102,11 +103,10 @@ seizure_detection/
 ├── requirements.txt       # List of required Python packages
 └── utils.py               # Utility functions
 ```
+## References
+I want personally thank this work for the suggestion of downsampling the EEG signal. From what I observe models usually fail on high-frequency signals. 
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request with your enhancements.
-
+- Gramacki, A., & Gramacki, J. (2022). *A deep learning framework for epileptic seizure detection based on neonatal EEG signals*. Scientific Reports, 12, 13010. https://doi.org/10.1038/s41598-022-15830-2
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
