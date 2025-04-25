@@ -20,7 +20,7 @@ The goal of this project is to develop a robust system capable of detecting epil
 
 ## Features
 
-- **Data Handling**: Efficient loading and preprocessing of EEG datasets.
+- **Data Handling**: Efficient loading and preprocessing (undersampling) of EEG datasets.
 - **Model Management**: Modular architecture for training and evaluating various machine learning models.
 - **Checkpointing**: Save and load model states to facilitate training resumption and deployment.
 - **Utilities**: Helper functions to support data manipulation and model operations.
