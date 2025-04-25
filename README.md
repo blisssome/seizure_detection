@@ -8,18 +8,18 @@ A Python-based project aimed at detecting seizures using machine learning techni
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Model Performance](#model-performance)
 - [Project Structure](#project-structure)
-- [Requirements](#requirements)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Overview
 
-The goal of this project is to develop a robust system capable of detecting epileptic seizures from neurological data. Utilizing state-of-the-art machine learning algorithms, the system processes input data to identify patterns indicative of seizure activity.
+The goal of this project is to develop a robust system capable of detecting epileptic seizures from EEG data.
 
 ## Features
 
-- **Data Handling**: Efficient loading and preprocessing of neurological datasets.
+- **Data Handling**: Efficient loading and preprocessing of EEG datasets.
 - **Model Management**: Modular architecture for training and evaluating various machine learning models.
 - **Checkpointing**: Save and load model states to facilitate training resumption and deployment.
 - **Utilities**: Helper functions to support data manipulation and model operations.
@@ -64,6 +64,30 @@ The goal of this project is to develop a robust system capable of detecting epil
 
    This will initiate the training process based on the configurations provided.
 
+## Model Performance 
+
+The project evaluates the performance of three distinct models for seizure detection. The F1 scores achieved by each model after 50 epochs are as follows:
+
+| Model                          | F1 Score |
+|-------------------------------|----------|
+| Transformer                   | 0.92     |
+| 1D Convolutional Neural Network (CNN1D) | 0.93     |
+| 2D Convolutional Neural Network (CNN2D) | 0.91     |
+
+To further analyze model performance, we present the confusion matrices for each architecture. These matrices provide insight into the model’s precision, recall, and types of errors.
+
+### Transformer
+
+![Transformer Confusion Matrix](report/transformer_confusion_matrix.png)
+
+### CNN1D
+
+![CNN1D Confusion Matrix](report/cnn1d_confusion_matrix.png)
+
+### CNN2D
+
+![CNN2D Confusion Matrix](report/cnn2d_confusion_matrix.png)
+
 ## Project Structure
 
 ```
@@ -72,27 +96,11 @@ seizure_detection/
 │   └── ...           # Directory for model architectures
 ├── checkpoint_manager.py  # Handles saving and loading model checkpoints
 ├── config.py              # Configuration file for setting parameters
-├── dataset.py             # Dataset class for loading and preprocessing data
+├── dataset.py             # Dataset class for loading data for training
 ├── loader.py              # Functions for data loading
 ├── main.py                # Main script to run training and evaluation
 ├── requirements.txt       # List of required Python packages
 └── utils.py               # Utility functions
-```
-
-## Requirements
-
-The project relies on the following Python packages:
-
-- `numpy`
-- `pandas`
-- `scikit-learn`
-- `torch`
-- `matplotlib`
-
-Ensure all dependencies are installed by running:
-
-```bash
-pip install -r requirements.txt
 ```
 
 ## Contributing
