@@ -78,15 +78,15 @@ To further analyze model performance, we present the confusion matrices for each
 
 ### Transformer
 
-![Transformer Confusion Matrix](report/transformer_confusion_matrix.png)
+<img src="report/transformer_confusion_matrix.png.png" alt="Transformer Confusion Matrix" width="500"/>
 
 ### CNN1D
 
-![CNN1D Confusion Matrix](report/cnn1d_confusion_matrix.png)
+<img src="report/cnn1d_confusion_matrix.png.png" alt="CNN1D Confusion Matrix" width="500"/>
 
 ### CNN2D
 
-![CNN2D Confusion Matrix](report/cnn2d_confusion_matrix.png)
+<img src="report/cnn2d_confusion_matrix.png.png" alt="CNN2D Confusion Matrix" width="500"/>
 
 ## Project Structure
 
