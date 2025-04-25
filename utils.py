@@ -116,8 +116,7 @@ def print_classification_report(y_true, y_pred, class_names=None, round_digits=2
 def plot_confusion_matrix(y_true, 
                           y_pred, 
                           class_names=None, 
-                          figsize=(4, 3), 
-                          font_scale=1.2, 
+                          figsize=(5, 5), 
                           save_path=None):
     """
     Plots a confusion matrix.
@@ -166,9 +165,9 @@ def plot_confusion_matrix(y_true,
                     color='white' if is_diagonal else 'black',
                     bbox=dict(facecolor='#264653', alpha=0.7, boxstyle="round,pad=0.3") if is_diagonal else None)
 
-    ax.set_xlabel("Predicted", fontsize=11)
-    ax.set_ylabel("Actual", fontsize=11)
-    ax.set_title("Confusion Matrix", fontsize=12, fontweight='bold', pad=20)
+    ax.set_xlabel("Predicted", fontsize=9)
+    ax.set_ylabel("Actual", fontsize=9)
+    ax.set_title("Confusion Matrix", fontsize=10, fontweight='bold', pad=10)
     plt.xticks(rotation=0)
     plt.yticks(rotation=0)
     plt.tight_layout()
