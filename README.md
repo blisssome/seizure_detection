@@ -2,6 +2,8 @@
 
 A Python-based project aimed at detecting seizures using machine learning techniques. This repository encompasses data loading, preprocessing, model training, evaluation, and utility functions to facilitate the development and deployment of seizure detection models.
 
+Data Source: Kaggle - [EEG Seizure Analysis Dataset](https://www.kaggle.com/datasets/adibadea/chbmitseizuredataset/data) 
+
 ## Table of Contents
 
 - [Overview](#overview)
